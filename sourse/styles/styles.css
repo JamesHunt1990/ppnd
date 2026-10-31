@@ -1,0 +1,907 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: rgb(169, 169, 176);
+}
+
+
+
+
+
+
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1);
+
+
+
+    
+   
+}
+
+.left-bar{
+    grid-column: 1/3;
+    font-size: 1.5em;
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+.mid-bar{
+    grid-column: 3/13;
+    margin-left: 50px;
+    font-size: 1.5em;
+    
+}
+
+@media(max-width:940px){
+    .main-container{
+        place-items: center;
+        grid-template-rows: repeat(3);
+}
+    .left-bar{
+    grid-column: 1/13;
+    grid-row: 3/4;
+    font-size: 1em;
+    margin-left: 15px;
+}
+    .mid-bar{
+    grid-column: 1/13;
+    grid-row: 1/3;
+    font-size: 1em;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+}
+    .photo1{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        width: 99%;
+        
+    }
+}
+
+.raketa{
+    font-size: 2em;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    display: block;
+    
+}
+.raketa:hover{
+    background-color: grey;
+
+}
+.logo{
+    display: flex;
+    height: 100px;
+    
+    
+    
+    
+}
+.shapka{
+    width: 100%;
+    overflow: hidden;
+}    
+    
+
+.nav-container{
+    background-color: rgb(63, 61, 61);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+
+.nav-btn{
+    display: none;
+    font-size: 2em;
+    padding-inline: 10px;
+    padding-bottom: 3px;
+    border: none;
+    background-color: #a4bd01 ;
+}
+@media(max-width:1220px){
+    .nav-btn{
+    font-size: 1.5em;
+    width: 100%;
+    padding-inline: 10px;
+    padding-bottom: 3px;
+    border: none;
+    background-color: #c0dd04;
+    display: block;
+    cursor: pointer;
+    
+    
+     
+
+    }
+
+    
+    .nav-list{
+        display: none;
+    }
+    .nav-container:hover .nav-list{
+        display:block;
+        position:absolute;
+        background-color:  rgb(63, 61, 61);
+        
+        
+    }
+    .flex{
+        flex-direction: column;
+        
+        
+        
+    }
+   
+
+    
+}
+
+.nav-container>nav>ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+li{
+    margin-right: 15px;
+    font-size: 1.3em;
+    color: white;
+    
+}
+.nav-container>nav>ul>li>a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.nav-container>nav>ul>li>a:hover{
+    color: rgb(0, 255, 21);
+}
+.nav-container>nav>ul>li>a.active {
+  color: #ddff01;
+  border-radius: 6px;         
+}
+
+
+.left-bar>p{
+    margin-top: 15px;
+}
+.left-bar>a{
+    text-decoration: none;
+    color: rgb(31, 97, 75);
+}
+.left-bar>a:hover{
+    color: rgb(231, 238, 53);
+    text-shadow: 0 0 1px white, 0 0 1px white;
+}
+
+.photo1{
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.nav-btn:hover{
+    background-color: aqua;
+}
+
+@media(max-width:475px){
+    .shapka{
+        display: none;
+    }
+    .lo{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+/* news */
+.newnew{
+    background-image: url('../images/news2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+.news{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.card{
+    
+    width: 410px;
+    text-align: center;
+    color: rgb(236, 193, 241);
+    margin-right: 30px;
+
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+@media(max-width:1435px){
+    .news{
+        display: grid;
+        grid-template-columns: repeat(13,1fr);
+        gap: 20px;
+
+    }
+    .card{
+        
+        width: 200px;
+        margin-left: 20px;
+        
+        grid-column: 3/13;
+        
+        
+
+    }
+    
+    
+   
+}
+
+/* left bar */
+.radio{
+    margin-bottom: 30px;
+    width: 300px;
+    text-align: center;
+    color: rgb(236, 193, 241) ;
+    
+}
+.radio a{
+    text-decoration: none;
+    color: rgb(236, 193, 241);
+}
+
+/* Услуги */
+
+.uslugi{
+    margin-top: 30px;
+}
+.haveall{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.haveall>li>a:hover{
+    color:green;
+    background-color: white;
+    font-weight: 900;
+}
+.haveall>li:hover{
+    color: rgb(255, 0, 0);
+    font-weight: 900;
+}
+
+.uslugia{
+    
+    background-image: url('../images/Чертежи\ на\ рабочем\ столе\ -\ 1280x720.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    
+    
+}
+.usl>a{
+    color: aquamarine;
+}
+.haveall>li>a{
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width:1600px){
+    .uslugia .mid-bar{
+        grid-column: 1/13;
+    }
+    .uslugia .left-bar{
+        grid-column: 1/13;
+        place-items: center;
+    }
+}
+
+/* Металообработка */
+.coop1{
+    background-image: url('../images/metall.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.allmetal{
+    margin-top: 30px;
+    margin-left: 20px;
+    color: white;
+}
+@media(max-width:2600px){
+    .coop1 .mid-bar{
+        grid-column: 1/13;
+        place-items: center;
+        
+    }
+    .coop1 .left-bar{
+        display: none;
+    }
+}
+
+/* Очень важно. Выравние текста флексом без грида и спрятать лев панель */
+
+@media (max-width: 940px) {      
+  .coop1 .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .coop1 .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+
+/* Гидрорезка */
+
+.coop2{
+    background-image: url('../images/omax-istaknuta.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width:2600px){
+    .coop2 .mid-bar{
+        grid-column: 1/13;
+        place-items: center;
+        
+    }
+    .coop2 .left-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {      
+  .coop2 .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .coop2 .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+
+/* Гальваника */
+
+.coop3{
+    background-image: url('../images/galvanika.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media(max-width:2600px){
+    .coop3 .mid-bar{
+        grid-column: 1/13;
+        place-items: center;
+        
+    }
+    .coop3 .left-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {      
+  .coop3 .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .coop3 .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+
+/* Лако крас */
+
+.coop4{
+    background-image: url('../images/lakokras.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width:2600px){
+    .coop4 .mid-bar{
+        grid-column: 1/13;
+        place-items: center;
+        
+    }
+    .coop4 .left-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {      
+  .coop4 .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .coop4 .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+
+/* Сварка */
+
+.coop5{
+    background-image: url('../images/svarka.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width:2600px){
+    .coop5 .mid-bar{
+        grid-column: 1/13;
+        
+        
+    }
+    .coop5 .left-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {      
+  .coop5 .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .coop5 .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+/* Литейка */
+.coop6{
+    background-image: url('../images/liteyka.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+@media(max-width:2600px){
+    .coop6 .mid-bar{
+        grid-column: 1/13;
+        
+        
+    }
+    .coop6 .left-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {      
+  .coop6 .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .coop6 .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+/* термо */
+.coop7{
+    background-image: url('../images/termo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media(max-width:2600px){
+    .coop7 .mid-bar{
+        grid-column: 1/13;
+        
+        
+    }
+    .coop7 .left-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {      
+  .coop7 .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .coop7 .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+/* пластмасc */
+
+.coop8{
+    background-image: url('../images/plastmas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width:2600px){
+    .coop8 .mid-bar{
+        grid-column: 1/13;
+        
+        
+    }
+    .coop8 .left-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {      
+  .coop8 .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .coop8 .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+/* исп.центр */
+.coop9{
+    background-image: url('../images/ispitat.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media(max-width:2600px){
+    .coop9 .mid-bar{
+        grid-column: 1/13;
+        
+        
+    }
+    .coop9 .left-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {      
+  .coop9 .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .coop9 .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+/* Потребители */
+.potreb1{
+    background-image: url('../images/potreb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media(max-width:2600px){
+    .potreb1 .mid-bar{
+        grid-column: 1/13;
+        
+        
+    }
+    .potreb1 .left-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {      
+  .potreb1 .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .potreb1 .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+.allmetal>ul>li>a{
+    color: rgb(154, 212, 99);
+}
+/* акции */
+.akci{
+    background-image: url('../images/stakci.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media(max-width:2600px){
+    .akci .mid-bar{
+        grid-column: 1/13;
+        
+        
+        
+    }
+    .akci .left-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {      
+  .akci .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .akci .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+/* контакты */
+.contact{
+    background-image: url('../images/contact-info-2880x1800.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contacts-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+
+}
+.contacts-flex>.contright>p{
+    margin-bottom: 30px;
+}
+@media(max-width:2600px){
+    .contact .mid-bar{
+        grid-column: 1/13;
+        
+        
+        
+    }
+    .contact .left-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {      
+  .contact .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .contact .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+hr{
+    margin-bottom: 20px;
+}
+
+/* образование */
+.obraz{
+    background-image: url('../images/obrazov.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+@media(max-width:2600px){
+    .obraz .mid-bar{
+        grid-column: 1/13;
+        
+        
+        
+    }
+    .obraz .left-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 940px) {      
+  .obraz .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .obraz .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+/* корупция */
+.corup{
+    background-image: url('../images/korrupsia_1_.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media(max-width:2600px){
+    .corup .mid-bar{
+        grid-column: 1/13;
+        
+        
+        
+    }
+    .corup  .left-bar{
+        display: none;
+    }
+}
+@media (max-width: 940px) {      
+  .corup  .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .corup  .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
+.corup>.mid-bar>.allmetal{
+    text-align: center;
+}
+/* сертификаты */
+.sertif{
+    background-image: url('../images/sertif.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media(max-width:2600px){
+    .sertif .mid-bar{
+        grid-column: 1/13;
+        
+        
+        
+    }
+    .sertif  .left-bar{
+        display: none;
+    }
+}
+@media (max-width: 940px) {      
+  .sertif  .mid-bar {
+    grid-column: 1/13;
+    display: flex;              /* вместо display: grid */
+    flex-direction: column;     /* если несколько блоков друг под другом */
+       
+    min-height: 100vh;           /* сделай высоту побольше, например 80% экрана */
+    width: 100%;
+  }
+
+  .sertif  .left-bar {
+    grid-column: 1/13;
+    display: none;
+  }
+}
